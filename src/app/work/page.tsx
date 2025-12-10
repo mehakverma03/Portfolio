@@ -138,13 +138,14 @@ export default function Work() {
           
           <div className="hidden md:flex items-center gap-8">
             <Link href="/experience" className="text-gray-600 hover:text-blue-600 transition-colors">Experience</Link>
+            <Link href="/brands" className="text-gray-600 hover:text-blue-600 transition-colors">Brands</Link>
             <Link href="/work" className="text-blue-600 font-semibold">Work</Link>
             <Link href="/contact" className="text-gray-600 hover:text-blue-600 transition-colors">Contact</Link>
           </div>
 
           <Link 
             href="/contact"
-            className="genz-gradient text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-all duration-300 shadow-md"
+            className="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-6 py-2 rounded-full font-semibold hover:from-pink-600 hover:to-purple-600 transition-all duration-300 bright-glow shadow-lg"
           >
             Hire Me
           </Link>
@@ -167,7 +168,7 @@ export default function Work() {
               whileHover={{ scale: 1.05 }}
             >
               <FolderIcon className="w-4 h-4" />
-              Featured Work
+              Personal Projects & College Work
             </motion.div>
             
             <h1 className="text-5xl md:text-6xl font-black text-gray-800 mb-6 leading-tight">
@@ -175,8 +176,8 @@ export default function Work() {
             </h1>
             
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              From viral reels to strategic campaigns, here's how I bring brands to life 
-              and create content that resonates with millions ✨
+              From college club initiatives to extracurricular projects, here&apos;s a collection of my personal work, 
+              creative endeavors, and contributions to campus life ✨
             </p>
           </motion.div>
 
@@ -391,11 +392,11 @@ export default function Work() {
             transition={{ duration: 0.8, delay: 1 }}
           >
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Love what you see? Let's create something amazing together! 🚀
+              Love what you see? Let&apos;s create something amazing together! 🚀
             </h2>
             <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
-              I'm always excited to work on new projects and bring fresh ideas to life. 
-              Whether it's a viral campaign or a complete brand strategy, let's make it happen!
+              I&apos;m always excited to work on new projects and bring fresh ideas to life. 
+              Whether it&apos;s a viral campaign or a complete brand strategy, let&apos;s make it happen!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 

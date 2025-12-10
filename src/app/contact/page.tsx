@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useState } from 'react'
-import emailjs from '@emailjs/browser'
 import { 
   ArrowLeftIcon,
   SparklesIcon,
@@ -126,7 +125,7 @@ export default function Contact() {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.6 }}
             >
-              Thank you for reaching out! I'll get back to you within 24 hours.
+              Thank you for reaching out! I&apos;ll get back to you within 24 hours.
             </motion.p>
             
             <motion.div
@@ -208,12 +207,13 @@ export default function Contact() {
           
           <div className="hidden md:flex items-center gap-8">
             <Link href="/experience" className="text-gray-600 hover:text-blue-600 transition-colors">Experience</Link>
+            <Link href="/brands" className="text-gray-600 hover:text-blue-600 transition-colors">Brands</Link>
             <Link href="/work" className="text-gray-600 hover:text-blue-600 transition-colors">Work</Link>
             <Link href="/contact" className="text-blue-600 font-semibold">Contact</Link>
           </div>
 
           <div className="genz-gradient text-white px-6 py-2 rounded-full font-semibold shadow-md">
-            Let's Talk!
+            Let&apos;s Talk!
           </div>
         </div>
       </nav>
@@ -245,7 +245,7 @@ export default function Contact() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Let's Create Something <span className="genz-text-gradient">Amazing</span>
+              Let&apos;s Create Something <span className="genz-text-gradient">Amazing</span>
             </motion.h1>
             
             <motion.p 
@@ -255,7 +255,7 @@ export default function Contact() {
               transition={{ duration: 0.8, delay: 0.4 }}
             >
               Ready to turn your ideas into <span className="font-semibold text-purple-600">viral campaigns</span>? 
-              Drop me a message and let's make some <span className="font-semibold text-pink-600">marketing magic</span> happen! ✨
+              Drop me a message and let&apos;s make some <span className="font-semibold text-pink-600">marketing magic</span> happen! ✨
             </motion.p>
           </motion.div>
 
@@ -442,7 +442,7 @@ export default function Contact() {
                   >
                     <HeartIcon className="w-8 h-8" />
                   </motion.div>
-                  Let's Connect
+                  Let&apos;s Connect
                 </motion.h2>
                 
                 <div className="space-y-6">
@@ -570,7 +570,7 @@ export default function Contact() {
             <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
               Follow me on social media for daily <span className="font-semibold text-purple-600">marketing insights</span>, 
               <span className="font-semibold text-pink-600"> behind-the-scenes content</span>, 
-              and the occasional meme that's actually funny!
+              and the occasional meme that&apos;s actually funny!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.div

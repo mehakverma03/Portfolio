@@ -81,13 +81,14 @@ export default function About() {
           
           <div className="hidden md:flex items-center gap-8">
             <Link href="/experience" className="text-gray-600 hover:text-blue-600 transition-colors">Experience</Link>
+            <Link href="/brands" className="text-gray-600 hover:text-blue-600 transition-colors">Brands</Link>
             <Link href="/work" className="text-gray-600 hover:text-blue-600 transition-colors">Work</Link>
             <Link href="/contact" className="text-gray-600 hover:text-blue-600 transition-colors">Contact</Link>
           </div>
 
           <Link 
             href="/contact"
-            className="genz-gradient text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-all duration-300 shadow-md"
+            className="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-6 py-2 rounded-full font-semibold hover:from-pink-600 hover:to-purple-600 transition-all duration-300 bright-glow shadow-lg"
           >
             Hire Me
           </Link>
@@ -121,7 +122,7 @@ export default function About() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Hey, I'm <span className="genz-text-gradient">Mehak!</span>
+              Hey, I&apos;m <span className="genz-text-gradient">Mehak!</span>
             </motion.h1>
             
             <motion.div 
@@ -175,7 +176,7 @@ export default function About() {
                   transition={{ duration: 0.6, delay: 0.4 }}
                 >
                   Currently pursuing my <span className="font-semibold text-purple-600">PGPM in Marketing</span> at IBS Mumbai with an impressive 
-                  <span className="font-semibold text-pink-600"> 9.36 CGPA</span>, I'm passionate about the intersection of creativity and strategic marketing. 
+                  <span className="font-semibold text-pink-600"> 9.36 CGPA</span>, I&apos;m passionate about the intersection of creativity and strategic marketing. 
                   My journey began with a fascination for how brands connect with audiences authentically.
                 </motion.p>
                 
@@ -185,8 +186,8 @@ export default function About() {
                   transition={{ duration: 0.6, delay: 0.6 }}
                 >
                   My experience at <span className="font-semibold text-cyan-600">GLAD U CAME</span> as a Celebrity Gifting Intern was transformative - I secured 
-                  <span className="font-semibold text-pink-600"> 100+ celebrity stories</span> for major campaigns including Domino's and KFC, and was recognized 
-                  as <span className="font-semibold text-yellow-600">"Best Intern of the Month."</span> This role taught me the power of influencer partnerships 
+                  <span className="font-semibold text-pink-600"> 100+ celebrity stories</span> for major campaigns including Domino&apos;s and KFC, and was recognized 
+                  as <span className="font-semibold text-yellow-600">&quot;Best Intern of the Month.&quot;</span> This role taught me the power of influencer partnerships 
                   and relationship building in modern marketing.
                 </motion.p>
                 
@@ -195,7 +196,7 @@ export default function About() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.8 }}
                 >
-                  Beyond academics and internships, I'm actively involved in extracurriculars as 
+                  Beyond academics and internships, I&apos;m actively involved in extracurriculars as 
                   <span className="font-semibold text-blue-600"> Co-head & Social Media Apex</span> of Marketing 360°, 
                   <span className="font-semibold text-green-600"> Video Editor Chief</span> in Branding Team of IBS Mumbai, 
                   and a <span className="font-semibold text-purple-600">UGC Creator</span>. I believe in learning by doing and staying ahead of digital trends.
@@ -321,7 +322,7 @@ export default function About() {
                     My celebrity gifting campaigns delivered measurable results - 
                     <span className="font-semibold text-pink-600"> 100+ celebrity stories</span>, 
                     <span className="font-semibold text-green-600"> 50% content retention rate</span>, and recognition as 
-                    <span className="font-semibold text-yellow-600"> "Best Intern of the Month."</span>
+                    <span className="font-semibold text-yellow-600"> &quot;Best Intern of the Month.&quot;</span>
                   </p>
                 </motion.div>
               </div>
@@ -383,7 +384,7 @@ export default function About() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}
             >
-              Let's connect and build something extraordinary! I'm always excited to collaborate on 
+              Let&apos;s connect and build something extraordinary! I&apos;m always excited to collaborate on 
               creative projects and innovative marketing campaigns.
             </motion.p>
             
@@ -410,7 +411,7 @@ export default function About() {
                   className="glass-card text-gray-700 px-8 py-4 rounded-full font-semibold text-lg border border-pink-300/60 bg-white/80 hover:border-pink-400 hover:text-pink-600 transition-all duration-300 flex items-center gap-3 justify-center"
                 >
                   <HeartIcon className="w-5 h-5" />
-                  Let's Talk
+                  Let&apos;s Talk
                 </Link>
               </motion.div>
             </div>

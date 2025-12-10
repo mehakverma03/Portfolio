@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { 
   ArrowRightIcon,
@@ -79,6 +80,7 @@ export default function Home() {
           
           <div className="hidden md:flex items-center gap-8">
             <Link href="/experience" className="text-gray-700 hover:text-blue-500 transition-colors font-medium">Experience</Link>
+            <Link href="/brands" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Brands</Link>
             <Link href="/work" className="text-gray-700 hover:text-purple-500 transition-colors font-medium">Work</Link>
             <Link href="/contact" className="text-gray-700 hover:text-teal-500 transition-colors font-medium">Contact</Link>
           </div>
@@ -112,21 +114,18 @@ export default function Home() {
               >
                 <div className="absolute inset-0 genz-gradient rounded-full blur-xl opacity-30 animate-pulse group-hover:opacity-50 transition-opacity duration-300"></div>
                 <div className="relative w-full h-full glass-card rounded-full p-3 shadow-2xl group-hover:shadow-3xl transition-all duration-300">
-                  <div className="w-full h-full bg-gradient-to-br from-white to-gray-100 rounded-full flex items-center justify-center overflow-hidden shadow-inner">
+                  <div className="w-full h-full bg-gradient-to-br from-white to-gray-100 rounded-full flex items-center justify-center overflow-hidden shadow-inner relative">
                     {/* Profile Image */}
-                    <img 
-                      src="/profile.jpg" 
-                      alt="Mehak Verma - Marketing Professional" 
-                      className="w-full h-full object-cover rounded-full group-hover:scale-110 transition-transform duration-500"
-                      onError={(e) => {
-                        // Fallback to placeholder if image doesn't load
-                        const target = e.target as HTMLImageElement;
-                        target.style.display = 'none';
-                        target.nextElementSibling?.classList.remove('hidden');
-                      }}
+                    <Image
+                      src="/profile.jpg"
+                      alt="Mehak Verma - Marketing Professional"
+                      fill
+                      className="object-cover rounded-full group-hover:scale-110 transition-transform duration-500"
+                      sizes="(max-width: 768px) 320px, 384px"
+                      priority
                     />
                     {/* Fallback placeholder */}
-                    <div className="w-full h-full genz-gradient items-center justify-center text-6xl text-white font-bold hidden">
+                    <div className="absolute inset-0 genz-gradient items-center justify-center text-6xl text-white font-bold hidden">
                       M
                     </div>
                   </div>
@@ -195,7 +194,7 @@ export default function Home() {
 
             {/* Name with Typewriter Effect */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-gray-800 mb-4 leading-tight">
-              I'm <span className="genz-text-gradient">
+              I&apos;m <span className="genz-text-gradient">
                 <TypewriterText text="Mehak" delay={150} />
               </span>
             </h1>
@@ -227,11 +226,12 @@ export default function Home() {
               <p className="mb-4">
                 <span className="font-semibold text-gray-800">PGPM Marketing Student</span> ✨ 
                 <br />
-                <span className="font-semibold text-pink-600">Celebrity Gifting Expert</span> who turns moments into memories 💕
+                <span className="font-semibold text-pink-600">Creative Marketer</span> who turns ideas into impactful campaigns 💕
               </p>
             <p className="text-base text-gray-600">
-              I create content that doesn't just sell products—it tells stories that connect hearts and build communities. 
-              <span className="font-medium text-purple-600"> Currently crafting the next viral campaign! 🚀</span>
+              I create content that doesn&apos;t just sell products—it tells stories that connect hearts and build communities. 
+              From <span className="font-medium text-purple-600">celebrity partnerships</span> to <span className="font-medium text-blue-600">viral campaigns</span>, 
+              I help brands make lasting impressions. <span className="font-medium text-purple-600">Currently crafting the next viral campaign! 🚀</span>
             </p>
             
             <motion.div 
@@ -329,7 +329,7 @@ export default function Home() {
                   className="group glass-card text-gray-700 px-8 py-4 rounded-full font-semibold text-lg border border-pink-300/60 hover:border-pink-400 hover:bg-pink-50 transition-all duration-300 flex items-center gap-3 justify-center shadow-lg hover:shadow-xl"
                 >
                   <HeartIcon className="w-5 h-5 text-pink-500 group-hover:scale-110 transition-transform" />
-                  <span>Let's Connect</span>
+                  <span>Let&apos;s Connect</span>
                 </Link>
               </motion.div>
             </motion.div>

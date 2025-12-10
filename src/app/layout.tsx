@@ -4,6 +4,13 @@ import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
+// Google Sans font using Next.js font optimization
+const googleSans = Inter({
+  subsets: ['latin'],
+  variable: '--font-google-sans',
+  display: 'swap',
+})
+
 export const metadata: Metadata = {
   title: 'Marketing Portfolio | Google Marketing Apprentice Candidate',
   description: 'Professional marketing portfolio showcasing expertise in digital marketing, brand strategy, and data-driven campaigns. Applying for Google Marketing Apprentice Program India.',
@@ -30,10 +37,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <head>
-        <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-      </head>
+    <html lang="en" className={`scroll-smooth ${googleSans.variable}`}>
       <body className={`${inter.className} antialiased`}>
         {children}
       </body>

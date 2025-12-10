@@ -23,12 +23,12 @@ export default function Experience() {
       location: 'Mumbai, India',
       description: 'Selected for prestigious 6-month Graduate Trainee program at global advertising agency Dentsu.',
       achievements: [
-        'Selected from competitive applicant pool',
-        'Multi-disciplinary training in Copywriting, Art Direction, PR, Brand Strategy',
-        'Crafting compelling copy across various media platforms',
-        'Developing strategic PR plans and brand strategies'
+        'Produced short-form content for 7+ major brands',
+        'Appeared on-camera to boost brand storytelling and engagement',
+        'Managed end-to-end production, delivering 15 video assets monthly',
+        'Ideated and scripted marketing concepts with a 10-member creative team'
       ],
-      skills: ['Digital Media Campaigns', 'Copywriting', 'Brand Strategy', 'Client Servicing'],
+      skills: ['Digital Media Campaigns', 'Copywriting', 'Brand Strategy', 'Scripting & Shooting', 'Trend Analysis'],
       color: 'from-purple-500 to-pink-500',
       highlight: 'Elite Program Selection',
       logo: '/dentsu_logo.jpeg'
@@ -39,9 +39,9 @@ export default function Experience() {
       role: 'Celebrity Gifting Intern',
       duration: 'Feb 2025 - May 2025',
       location: 'Mumbai, India',
-      description: 'Specialized in celebrity gifting campaigns for major brands including Domino\'s and KFC.',
+      description: 'Specialized in celebrity gifting campaigns for major brands including Domino&apos;s and KFC.',
       achievements: [
-        'Secured 100+ celebrity stories for Domino\'s campaign',
+        'Secured 100+ celebrity stories for Domino&apos;s campaign',
         'Researched 200+ celebrities for targeted outreach',
         'Secured 10 celebrity endorsements for KFC launch',
         'Best Intern of the Month recognition'
@@ -90,13 +90,14 @@ export default function Experience() {
           
           <div className="hidden md:flex items-center gap-8">
             <Link href="/experience" className="text-blue-600 font-semibold">Experience</Link>
+            <Link href="/brands" className="text-gray-600 hover:text-blue-600 transition-colors">Brands</Link>
             <Link href="/work" className="text-gray-600 hover:text-blue-600 transition-colors">Work</Link>
             <Link href="/contact" className="text-gray-600 hover:text-blue-600 transition-colors">Contact</Link>
           </div>
 
           <Link 
             href="/contact"
-            className="genz-gradient text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-all duration-300 shadow-md"
+            className="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-6 py-2 rounded-full font-semibold hover:from-pink-600 hover:to-purple-600 transition-all duration-300 bright-glow shadow-lg"
           >
             Hire Me
           </Link>
@@ -123,7 +124,7 @@ export default function Experience() {
             </motion.div>
             
             <h1 className="text-4xl md:text-5xl font-black text-gray-800 mb-4 leading-tight">
-              Where I've <span className="genz-text-gradient">Made Impact</span>
+              Where I&apos;ve <span className="genz-text-gradient">Made Impact</span>
             </h1>
             
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -271,7 +272,7 @@ export default function Experience() {
                 href="/contact"
                 className="glass-card text-gray-700 px-8 py-4 rounded-full font-semibold text-lg border border-gray-300 bg-white/80 hover:border-blue-400 hover:text-blue-600 transition-all duration-300"
               >
-                Let's Connect
+                Let&apos;s Connect
               </Link>
             </div>
           </motion.div>
